@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Bug Tracking & Customer Support</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bug Tracker & Customer Support</h1>
+  </header>
+
+  <section id="bug-tracker">
+    <h2>Report a Bug</h2>
+    <form id="bugForm">
+      <label for="bugTitle">Bug Title:</label>
+      <input type="text" id="bugTitle" name="bugTitle" required />
+
+      <label for="bugDescription">Description:</label>
+      <textarea id="bugDescription" name="bugDescription" required></textarea>
+
+      <label for="bugSeverity">Severity:</label>
+      <select id="bugSeverity" name="bugSeverity">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button type="submit">Submit Bug</button>
+    </form>
+
+    <div id="bugList">
+      <h3>Reported Bugs</h3>
+      <ul id="bugs"></ul>
+    </div>
+  </section>
+
+  <section id="customer-support">
+    <h2>Customer Support Chat</h2>
+    <div id="chatBox">
+      <!-- Chat messages will appear here -->
+    </div>
+    <form id="chatForm">
+      <input type="text" id="chatInput" placeholder="Type your message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
